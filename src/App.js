@@ -52,7 +52,7 @@ function App() {
             </div>}>     
           </Route>
           
-          <Route exact path="/TextUtils_ReactApp" element={<div className="container my-3">
+          <Route exact path="/" element={<div className="container my-3">
               <TextForm heading="Enter the text to analyze:" mode={mode} showAlert={showAlert}/>
             </div>}>
           </Route>
