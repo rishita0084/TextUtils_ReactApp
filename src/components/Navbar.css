@@ -1,0 +1,6 @@
+/* Custom CSS */
+/* Green background color when switch is toggled */
+.form-check-input:checked {
+    background-color: green;
+  }
+  
