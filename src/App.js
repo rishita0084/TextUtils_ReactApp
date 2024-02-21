@@ -3,6 +3,7 @@ import Alert from './components/Alert';
 import About from './components/About';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
+import Weather from './components/Weather';
 import React, { useState } from 'react';
 import {
   BrowserRouter,
@@ -49,6 +50,11 @@ function App() {
       <Routes> 
           <Route exact path="/about" element={<div className="container my-3">
               <About heading="About us:"  mode={mode}/>
+            </div>}>     
+          </Route>
+
+          <Route exact path="/weather" element={<div className="container my-3">
+              <Weather  mode={mode}/>
             </div>}>     
           </Route>
           

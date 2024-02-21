@@ -1,5 +1,6 @@
 import React,{useState} from "react";
 
+
 export default function TextForm(props) {
     const handleOnChange = (event) => {
         setText(event.target.value);
@@ -64,7 +65,7 @@ export default function TextForm(props) {
     const [text,setText] = useState("");
   return (
     <>
-    <div>
+    <div className="textArea">
       <div className="mb-3">
         <h3 style={{color: props.mode==='light'? '#198754':'#53d79a'}}>{props.heading}</h3>
         <textarea className="form-control" value={text} style={{backgroundColor: props.mode==='light'? 'white':'#333b37',color: props.mode==='light'? 'black':'white'}} onChange={handleOnChange} id="myBox" cols="30" rows="10"></textarea>
